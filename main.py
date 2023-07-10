@@ -13,6 +13,7 @@ container_client = blob_service_client.get_container_client(container_name)
 # List all blob
 blobs = container_client.list_blobs(name_starts_with='')
 
+current_time = datetime.now()
 current_year = current_time.year
 current_month = current_time.month
 current_day = current_time.day
